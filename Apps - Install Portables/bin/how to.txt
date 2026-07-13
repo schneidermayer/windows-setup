@@ -1,0 +1,7 @@
+
+usage:
+> SetUserFTA.exe .pdf AcroExch.Document.DC
+
+
+
+the easiest way to get the ProgId what you need, is to manually associate a software with a filetype and then use “SetUserFTA get”

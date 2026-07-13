@@ -1,0 +1,3 @@
+robocopy "G:\apps" "C:\apps" /copyall /E
+robocopy "G:\heaNz" "C:\heaNz" /copyall /E
+robocopy "G:\dev" "C:\dev" /copyall /E

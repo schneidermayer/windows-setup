@@ -1,0 +1,62 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Console]
+"CurrentPage"=dword:00000003
+
+[HKEY_CURRENT_USER\Console\%SystemRoot%_System32_WindowsPowerShell_v1.0_powershell.exe]
+"WindowSize"=dword:003200af
+"FaceName"="Consolas"
+"FontSize"=dword:00100008
+"ColorTable00"=dword:00281616
+"ColorTable05"=dword:002d0f15
+"ColorTable09"=dword:00ff783a
+"ScreenBufferSize"=dword:177000af
+
+
+[HKEY_CURRENT_USER\Console\%SystemRoot%_System32_cmd.exe]
+"ScreenBufferSize"=dword:232900af
+"WindowSize"=dword:003400af
+"ColorTable02"=dword:000ea013
+"ColorTable09"=dword:00ff783a
+"InsertMode"=dword:00000001
+"FontSize"=dword:00100000
+"FontFamily"=dword:00000036
+"FontWeight"=dword:00000190
+"FaceName"="Consolas"
+
+
+[HKEY_CURRENT_USER\Console\%SystemRoot%_system32_wsl.exe]
+"FontFamily"=dword:00000036
+"FontSize"=dword:000e0008
+"FaceName"="Lucida Console"
+"ScreenBufferSize"=dword:0bb800a0
+"WindowSize"=dword:003200a0
+"FontWeight"=dword:00000190
+"ColorTable00"=dword:000f0128
+"ColorTable09"=dword:00ff783a
+
+
+
+
+; CHECK THIS OUT if portable is working yo
+; "D:\apps\Ubuntu\ubuntu2004.exe" -replace '\\','_'
+
+[HKEY_CURRENT_USER\Console\C:_Program Files_WindowsApps_CanonicalGroupLimited.Ubuntu20.04onWindows_2004.2021.825.0_x64__79rhkp1fndgsc_ubuntu2004.exe]
+"FontWeight"=dword:00000190
+"FontFamily"=dword:00000036
+"WindowSize"=dword:002d00a0
+"ScreenBufferSize"=dword:0bb800a0
+"ColorTable00"=dword:000c0c26
+"ColorTable09"=dword:00ff783a
+"FontSize"=dword:000c0000
+"FaceName"="Consolas"
+[HKEY_CURRENT_USER\Console\D:_apps_Ubuntu_ubuntu2004.exe]
+"FontWeight"=dword:00000190
+"FontFamily"=dword:00000036
+"WindowSize"=dword:002d00a0
+"ScreenBufferSize"=dword:0bb800a0
+"ColorTable00"=dword:000c0c26
+"FontSize"=dword:000c0000
+"FaceName"="Consolas"
+
+

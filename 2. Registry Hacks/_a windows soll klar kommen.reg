@@ -1,0 +1,140 @@
+Windows Registry Editor Version 5.00
+
+
+; boot up numpad
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="2"
+"KeyboardDelay"="1"
+"KeyboardSpeed"="31"
+
+
+; enable hex numpad
+[HKEY_CURRENT_USER\Control Panel\Input Method]
+"Show Status"="1"
+"EnableHexNumpad"="1"
+
+
+; win + e öffnet "dieser computer"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"LaunchTo"=dword:00000001
+
+
+; dateierweiterungen einblenden
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideFileExt"=dword:00000000
+
+; show system files
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSuperHidden"=dword:00000001
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Search\Preferences]
+"WholeFileSystem"=dword:00000000
+"EnableNaturalQuerySyntax"=dword:00000000
+"AutoWildCard"=dword:00000001
+"ArchivedFiles"=dword:00000000
+"SystemFolders"=dword:00000001
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Search\PrimaryProperties\UnindexedLocations]
+"SearchOnly"=dword:00000001
+
+
+; nichts automatisch an schnellzugriff heften
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowFrequent"=dword:00000000
+"ShowRecent"=dword:00000000
+
+
+; taskbar stuff
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+; taskbar: program nur auf taskleiste mit geöffnetem fenster
+"MMTaskbarMode"=dword:00000002
+
+; taskbar: remove button "suche"
+"TaskbarMn"=dword:00000000
+
+; taskbar: remove button "widgets"
+"TaskbarDa"=dword:00000000
+
+; taskbar: remove button "aktive anwendungen"
+"ShowTaskViewButton"=dword:00000000
+
+; taskbar: links anzeigen
+"TaskbarAl"=dword:00000000
+
+; taskbar: no glomming (keep every icon on the taskbar separate)
+"TaskbarGlomming"=dword:00000000
+
+; taskbar: niemals gruppieren
+"TaskbarGlomLevel"=dword:00000002
+"MMTaskbarGlomLevel"=dword:00000002
+
+; taskbar: hide cortana button
+"ShowCortanaButton"=dword:00000000
+
+; taskbar: remove button "suche"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000000
+
+; taskbar: remove schnellstart icons
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\ShowJumpView]
+"MSEdge"=dword:00000000
+"Microsoft.Windows.Explorer"=dword:00000000
+"Microsoft.WindowsStore_8wekyb3d8bbwe!App"=dword:00000000
+"microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"=dword:00000000
+
+
+
+; taskbar: hide wetter
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Feeds]
+"ShellFeedsTaskbarViewMode"=dword:00000002
+
+
+; audio ducking: "nichts unternehmen"
+[HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio]
+"UserDuckingPreference"=dword:00000003
+
+
+; show dieser pc und user folder
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons]
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu]
+"{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000000
+"{59031a47-3f72-44a7-89c5-5595fe6b30ee}"=dword:00000000
+
+
+
+; touchpad settings
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\PrecisionTouchPad]
+"ThreeFingerTapEnabled"=dword:00000004
+"FourFingerTapEnabled"=dword:00000000
+"ThreeFingerSlideEnabled"=dword:00000003
+@=dword:00000000
+"AAPThreshold"=dword:00000001
+"EnableEdgy"=dword:ffffffff
+"LeaveOnWithMouse"=dword:ffffffff
+"PanEnabled"=dword:ffffffff
+"RightClickZoneEnabled"=dword:ffffffff
+"TapAndDrag"=dword:ffffffff
+"TapsEnabled"=dword:ffffffff
+"TwoFingerTapEnabled"=dword:ffffffff
+"ZoomEnabled"=dword:ffffffff
+"HonorMouseAccelSetting"=dword:00000000
+
+
+; maus settings
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseThreshold1"="0"
+"MouseSpeed"="0"
+"MouseThreshold2"="0"
+
+
+; power: hiberboot disable
+[HKEY_LOCAL_MACHINE\System\ControlSet001\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000000
+
+
+; entwicklermodus
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\AppModelUnlock]
+"AllowDevelopmentWithoutDevLicense"=dword:00000001
+
+
